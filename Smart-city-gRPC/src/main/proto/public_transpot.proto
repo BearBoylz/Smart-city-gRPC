@@ -2,5 +2,13 @@ syntax = "proto3";
 package transport;
 
 message VehicleRequest { string vehicle_id = 1; }
+message VehiclePosition { string vehicle_id = 1; double lat = 2; double lon = 3; double speed = 4; int64 ts = 5; }
+message RouteRecord { string vehicle_id = 1; repeated string stops = 2; }
+message FleetSummary { uint32 vehicles = 1; double avg_speed = 2; }
 
-service PublicTransportService {}
+service PublicTransportService {
+  rpc GetVehicle   (VehicleRequest) returns (VehiclePosition);                      // Unary
+  rpc StreamFleet  (VehicleRequest) returns (stream VehiclePosition);               // Server‑stream
+  rpc UploadRoute  (stream RouteRecord) returns (FleetSummary);                     // Client‑stream
+  rpc FleetControl (stream RouteRecord) returns (stream VehiclePosition);           // Bi‑di
+}

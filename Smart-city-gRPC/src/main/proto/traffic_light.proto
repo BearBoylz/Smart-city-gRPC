@@ -1,4 +1,24 @@
 syntax = "proto3";
 package traffic;
 
-service TrafficLightService {}
+enum LightColor { RED = 0; YELLOW = 1; GREEN = 2; }
+message GetStatusRequest { string intersection_id = 1; }
+message TrafficLightStatus {
+  string intersection_id = 1;
+  LightColor color = 2;
+  int32 seconds_remaining = 3;
+}
+message SequenceUpdate {
+  string intersection_id = 1;
+  repeated LightColor sequence = 2;
+  int32 g = 3; int32 y = 4; int32 r = 5;
+}
+message SeqUpdateSummary { string intersection_id = 1; bool applied = 2; }
+message TrafficLightCmd { string intersection_id = 1; LightColor override = 2; }
+
+service TrafficLightService {
+  rpc GetStatus    (GetStatusRequest) returns (TrafficLightStatus);                // Unary
+  rpc WatchStatus  (GetStatusRequest) returns (stream TrafficLightStatus);         // Server‑stream
+  rpc UpdateSeq    (stream SequenceUpdate) returns (SeqUpdateSummary);             // Client‑stream
+  rpc LiveControl  (stream TrafficLightCmd) returns (stream TrafficLightStatus);   // Bi‑di
+}

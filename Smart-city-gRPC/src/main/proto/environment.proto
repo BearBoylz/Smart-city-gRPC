@@ -9,3 +9,15 @@ message SensorReading {
   double pm25 = 4;
   int64 timestamp = 5;
 }
+message CalibrationData {
+  string sensor_id = 1; double t_offset = 2; double h_offset = 3; double pm25_factor = 4;
+}
+message CalibrationResult { string sensor_id = 1; bool applied = 2; }
+message TuneCmd { string sensor_id = 1; double sample_rate = 2; }
+
+service EnvironmentalSensorService {
+  rpc GetReading      (GetReadingRequest) returns (SensorReading);
+  rpc StreamReadings  (GetReadingRequest) returns (stream SensorReading);
+  rpc UploadCalib     (stream CalibrationData) returns (CalibrationResult);
+  rpc LiveTuning      (stream TuneCmd) returns (stream SensorReading);
+}
