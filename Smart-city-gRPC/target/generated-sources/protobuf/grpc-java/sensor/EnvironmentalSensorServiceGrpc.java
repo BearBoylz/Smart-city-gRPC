@@ -15,29 +15,29 @@ public final class EnvironmentalSensorServiceGrpc {
   public static final String SERVICE_NAME = "sensor.EnvironmentalSensorService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<sensor.Environment.GetReadingRequest,
-      sensor.Environment.SensorReading> getGetReadingMethod;
+  private static volatile io.grpc.MethodDescriptor<sensor.GetReadingRequest,
+      sensor.SensorReading> getGetReadingMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetReading",
-      requestType = sensor.Environment.GetReadingRequest.class,
-      responseType = sensor.Environment.SensorReading.class,
+      requestType = sensor.GetReadingRequest.class,
+      responseType = sensor.SensorReading.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<sensor.Environment.GetReadingRequest,
-      sensor.Environment.SensorReading> getGetReadingMethod() {
-    io.grpc.MethodDescriptor<sensor.Environment.GetReadingRequest, sensor.Environment.SensorReading> getGetReadingMethod;
+  public static io.grpc.MethodDescriptor<sensor.GetReadingRequest,
+      sensor.SensorReading> getGetReadingMethod() {
+    io.grpc.MethodDescriptor<sensor.GetReadingRequest, sensor.SensorReading> getGetReadingMethod;
     if ((getGetReadingMethod = EnvironmentalSensorServiceGrpc.getGetReadingMethod) == null) {
       synchronized (EnvironmentalSensorServiceGrpc.class) {
         if ((getGetReadingMethod = EnvironmentalSensorServiceGrpc.getGetReadingMethod) == null) {
           EnvironmentalSensorServiceGrpc.getGetReadingMethod = getGetReadingMethod =
-              io.grpc.MethodDescriptor.<sensor.Environment.GetReadingRequest, sensor.Environment.SensorReading>newBuilder()
+              io.grpc.MethodDescriptor.<sensor.GetReadingRequest, sensor.SensorReading>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetReading"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  sensor.Environment.GetReadingRequest.getDefaultInstance()))
+                  sensor.GetReadingRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  sensor.Environment.SensorReading.getDefaultInstance()))
+                  sensor.SensorReading.getDefaultInstance()))
               .setSchemaDescriptor(new EnvironmentalSensorServiceMethodDescriptorSupplier("GetReading"))
               .build();
         }
@@ -46,29 +46,29 @@ public final class EnvironmentalSensorServiceGrpc {
     return getGetReadingMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<sensor.Environment.GetReadingRequest,
-      sensor.Environment.SensorReading> getStreamReadingsMethod;
+  private static volatile io.grpc.MethodDescriptor<sensor.GetReadingRequest,
+      sensor.SensorReading> getStreamReadingsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "StreamReadings",
-      requestType = sensor.Environment.GetReadingRequest.class,
-      responseType = sensor.Environment.SensorReading.class,
+      requestType = sensor.GetReadingRequest.class,
+      responseType = sensor.SensorReading.class,
       methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-  public static io.grpc.MethodDescriptor<sensor.Environment.GetReadingRequest,
-      sensor.Environment.SensorReading> getStreamReadingsMethod() {
-    io.grpc.MethodDescriptor<sensor.Environment.GetReadingRequest, sensor.Environment.SensorReading> getStreamReadingsMethod;
+  public static io.grpc.MethodDescriptor<sensor.GetReadingRequest,
+      sensor.SensorReading> getStreamReadingsMethod() {
+    io.grpc.MethodDescriptor<sensor.GetReadingRequest, sensor.SensorReading> getStreamReadingsMethod;
     if ((getStreamReadingsMethod = EnvironmentalSensorServiceGrpc.getStreamReadingsMethod) == null) {
       synchronized (EnvironmentalSensorServiceGrpc.class) {
         if ((getStreamReadingsMethod = EnvironmentalSensorServiceGrpc.getStreamReadingsMethod) == null) {
           EnvironmentalSensorServiceGrpc.getStreamReadingsMethod = getStreamReadingsMethod =
-              io.grpc.MethodDescriptor.<sensor.Environment.GetReadingRequest, sensor.Environment.SensorReading>newBuilder()
+              io.grpc.MethodDescriptor.<sensor.GetReadingRequest, sensor.SensorReading>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "StreamReadings"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  sensor.Environment.GetReadingRequest.getDefaultInstance()))
+                  sensor.GetReadingRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  sensor.Environment.SensorReading.getDefaultInstance()))
+                  sensor.SensorReading.getDefaultInstance()))
               .setSchemaDescriptor(new EnvironmentalSensorServiceMethodDescriptorSupplier("StreamReadings"))
               .build();
         }
@@ -77,29 +77,29 @@ public final class EnvironmentalSensorServiceGrpc {
     return getStreamReadingsMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<sensor.Environment.CalibrationData,
-      sensor.Environment.CalibrationResult> getUploadCalibMethod;
+  private static volatile io.grpc.MethodDescriptor<sensor.CalibrationData,
+      sensor.CalibrationResult> getUploadCalibMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "UploadCalib",
-      requestType = sensor.Environment.CalibrationData.class,
-      responseType = sensor.Environment.CalibrationResult.class,
+      requestType = sensor.CalibrationData.class,
+      responseType = sensor.CalibrationResult.class,
       methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
-  public static io.grpc.MethodDescriptor<sensor.Environment.CalibrationData,
-      sensor.Environment.CalibrationResult> getUploadCalibMethod() {
-    io.grpc.MethodDescriptor<sensor.Environment.CalibrationData, sensor.Environment.CalibrationResult> getUploadCalibMethod;
+  public static io.grpc.MethodDescriptor<sensor.CalibrationData,
+      sensor.CalibrationResult> getUploadCalibMethod() {
+    io.grpc.MethodDescriptor<sensor.CalibrationData, sensor.CalibrationResult> getUploadCalibMethod;
     if ((getUploadCalibMethod = EnvironmentalSensorServiceGrpc.getUploadCalibMethod) == null) {
       synchronized (EnvironmentalSensorServiceGrpc.class) {
         if ((getUploadCalibMethod = EnvironmentalSensorServiceGrpc.getUploadCalibMethod) == null) {
           EnvironmentalSensorServiceGrpc.getUploadCalibMethod = getUploadCalibMethod =
-              io.grpc.MethodDescriptor.<sensor.Environment.CalibrationData, sensor.Environment.CalibrationResult>newBuilder()
+              io.grpc.MethodDescriptor.<sensor.CalibrationData, sensor.CalibrationResult>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "UploadCalib"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  sensor.Environment.CalibrationData.getDefaultInstance()))
+                  sensor.CalibrationData.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  sensor.Environment.CalibrationResult.getDefaultInstance()))
+                  sensor.CalibrationResult.getDefaultInstance()))
               .setSchemaDescriptor(new EnvironmentalSensorServiceMethodDescriptorSupplier("UploadCalib"))
               .build();
         }
@@ -108,29 +108,29 @@ public final class EnvironmentalSensorServiceGrpc {
     return getUploadCalibMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<sensor.Environment.TuneCmd,
-      sensor.Environment.SensorReading> getLiveTuningMethod;
+  private static volatile io.grpc.MethodDescriptor<sensor.TuneCmd,
+      sensor.SensorReading> getLiveTuningMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "LiveTuning",
-      requestType = sensor.Environment.TuneCmd.class,
-      responseType = sensor.Environment.SensorReading.class,
+      requestType = sensor.TuneCmd.class,
+      responseType = sensor.SensorReading.class,
       methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
-  public static io.grpc.MethodDescriptor<sensor.Environment.TuneCmd,
-      sensor.Environment.SensorReading> getLiveTuningMethod() {
-    io.grpc.MethodDescriptor<sensor.Environment.TuneCmd, sensor.Environment.SensorReading> getLiveTuningMethod;
+  public static io.grpc.MethodDescriptor<sensor.TuneCmd,
+      sensor.SensorReading> getLiveTuningMethod() {
+    io.grpc.MethodDescriptor<sensor.TuneCmd, sensor.SensorReading> getLiveTuningMethod;
     if ((getLiveTuningMethod = EnvironmentalSensorServiceGrpc.getLiveTuningMethod) == null) {
       synchronized (EnvironmentalSensorServiceGrpc.class) {
         if ((getLiveTuningMethod = EnvironmentalSensorServiceGrpc.getLiveTuningMethod) == null) {
           EnvironmentalSensorServiceGrpc.getLiveTuningMethod = getLiveTuningMethod =
-              io.grpc.MethodDescriptor.<sensor.Environment.TuneCmd, sensor.Environment.SensorReading>newBuilder()
+              io.grpc.MethodDescriptor.<sensor.TuneCmd, sensor.SensorReading>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "LiveTuning"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  sensor.Environment.TuneCmd.getDefaultInstance()))
+                  sensor.TuneCmd.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  sensor.Environment.SensorReading.getDefaultInstance()))
+                  sensor.SensorReading.getDefaultInstance()))
               .setSchemaDescriptor(new EnvironmentalSensorServiceMethodDescriptorSupplier("LiveTuning"))
               .build();
         }
@@ -189,29 +189,29 @@ public final class EnvironmentalSensorServiceGrpc {
 
     /**
      */
-    public void getReading(sensor.Environment.GetReadingRequest request,
-        io.grpc.stub.StreamObserver<sensor.Environment.SensorReading> responseObserver) {
+    public void getReading(sensor.GetReadingRequest request,
+        io.grpc.stub.StreamObserver<sensor.SensorReading> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetReadingMethod(), responseObserver);
     }
 
     /**
      */
-    public void streamReadings(sensor.Environment.GetReadingRequest request,
-        io.grpc.stub.StreamObserver<sensor.Environment.SensorReading> responseObserver) {
+    public void streamReadings(sensor.GetReadingRequest request,
+        io.grpc.stub.StreamObserver<sensor.SensorReading> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getStreamReadingsMethod(), responseObserver);
     }
 
     /**
      */
-    public io.grpc.stub.StreamObserver<sensor.Environment.CalibrationData> uploadCalib(
-        io.grpc.stub.StreamObserver<sensor.Environment.CalibrationResult> responseObserver) {
+    public io.grpc.stub.StreamObserver<sensor.CalibrationData> uploadCalib(
+        io.grpc.stub.StreamObserver<sensor.CalibrationResult> responseObserver) {
       return io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall(getUploadCalibMethod(), responseObserver);
     }
 
     /**
      */
-    public io.grpc.stub.StreamObserver<sensor.Environment.TuneCmd> liveTuning(
-        io.grpc.stub.StreamObserver<sensor.Environment.SensorReading> responseObserver) {
+    public io.grpc.stub.StreamObserver<sensor.TuneCmd> liveTuning(
+        io.grpc.stub.StreamObserver<sensor.SensorReading> responseObserver) {
       return io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall(getLiveTuningMethod(), responseObserver);
     }
 
@@ -221,29 +221,29 @@ public final class EnvironmentalSensorServiceGrpc {
             getGetReadingMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                sensor.Environment.GetReadingRequest,
-                sensor.Environment.SensorReading>(
+                sensor.GetReadingRequest,
+                sensor.SensorReading>(
                   this, METHODID_GET_READING)))
           .addMethod(
             getStreamReadingsMethod(),
             io.grpc.stub.ServerCalls.asyncServerStreamingCall(
               new MethodHandlers<
-                sensor.Environment.GetReadingRequest,
-                sensor.Environment.SensorReading>(
+                sensor.GetReadingRequest,
+                sensor.SensorReading>(
                   this, METHODID_STREAM_READINGS)))
           .addMethod(
             getUploadCalibMethod(),
             io.grpc.stub.ServerCalls.asyncClientStreamingCall(
               new MethodHandlers<
-                sensor.Environment.CalibrationData,
-                sensor.Environment.CalibrationResult>(
+                sensor.CalibrationData,
+                sensor.CalibrationResult>(
                   this, METHODID_UPLOAD_CALIB)))
           .addMethod(
             getLiveTuningMethod(),
             io.grpc.stub.ServerCalls.asyncBidiStreamingCall(
               new MethodHandlers<
-                sensor.Environment.TuneCmd,
-                sensor.Environment.SensorReading>(
+                sensor.TuneCmd,
+                sensor.SensorReading>(
                   this, METHODID_LIVE_TUNING)))
           .build();
     }
@@ -265,32 +265,32 @@ public final class EnvironmentalSensorServiceGrpc {
 
     /**
      */
-    public void getReading(sensor.Environment.GetReadingRequest request,
-        io.grpc.stub.StreamObserver<sensor.Environment.SensorReading> responseObserver) {
+    public void getReading(sensor.GetReadingRequest request,
+        io.grpc.stub.StreamObserver<sensor.SensorReading> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetReadingMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void streamReadings(sensor.Environment.GetReadingRequest request,
-        io.grpc.stub.StreamObserver<sensor.Environment.SensorReading> responseObserver) {
+    public void streamReadings(sensor.GetReadingRequest request,
+        io.grpc.stub.StreamObserver<sensor.SensorReading> responseObserver) {
       io.grpc.stub.ClientCalls.asyncServerStreamingCall(
           getChannel().newCall(getStreamReadingsMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public io.grpc.stub.StreamObserver<sensor.Environment.CalibrationData> uploadCalib(
-        io.grpc.stub.StreamObserver<sensor.Environment.CalibrationResult> responseObserver) {
+    public io.grpc.stub.StreamObserver<sensor.CalibrationData> uploadCalib(
+        io.grpc.stub.StreamObserver<sensor.CalibrationResult> responseObserver) {
       return io.grpc.stub.ClientCalls.asyncClientStreamingCall(
           getChannel().newCall(getUploadCalibMethod(), getCallOptions()), responseObserver);
     }
 
     /**
      */
-    public io.grpc.stub.StreamObserver<sensor.Environment.TuneCmd> liveTuning(
-        io.grpc.stub.StreamObserver<sensor.Environment.SensorReading> responseObserver) {
+    public io.grpc.stub.StreamObserver<sensor.TuneCmd> liveTuning(
+        io.grpc.stub.StreamObserver<sensor.SensorReading> responseObserver) {
       return io.grpc.stub.ClientCalls.asyncBidiStreamingCall(
           getChannel().newCall(getLiveTuningMethod(), getCallOptions()), responseObserver);
     }
@@ -312,15 +312,15 @@ public final class EnvironmentalSensorServiceGrpc {
 
     /**
      */
-    public sensor.Environment.SensorReading getReading(sensor.Environment.GetReadingRequest request) {
+    public sensor.SensorReading getReading(sensor.GetReadingRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetReadingMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public java.util.Iterator<sensor.Environment.SensorReading> streamReadings(
-        sensor.Environment.GetReadingRequest request) {
+    public java.util.Iterator<sensor.SensorReading> streamReadings(
+        sensor.GetReadingRequest request) {
       return io.grpc.stub.ClientCalls.blockingServerStreamingCall(
           getChannel(), getStreamReadingsMethod(), getCallOptions(), request);
     }
@@ -342,8 +342,8 @@ public final class EnvironmentalSensorServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<sensor.Environment.SensorReading> getReading(
-        sensor.Environment.GetReadingRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sensor.SensorReading> getReading(
+        sensor.GetReadingRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetReadingMethod(), getCallOptions()), request);
     }
@@ -372,12 +372,12 @@ public final class EnvironmentalSensorServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_GET_READING:
-          serviceImpl.getReading((sensor.Environment.GetReadingRequest) request,
-              (io.grpc.stub.StreamObserver<sensor.Environment.SensorReading>) responseObserver);
+          serviceImpl.getReading((sensor.GetReadingRequest) request,
+              (io.grpc.stub.StreamObserver<sensor.SensorReading>) responseObserver);
           break;
         case METHODID_STREAM_READINGS:
-          serviceImpl.streamReadings((sensor.Environment.GetReadingRequest) request,
-              (io.grpc.stub.StreamObserver<sensor.Environment.SensorReading>) responseObserver);
+          serviceImpl.streamReadings((sensor.GetReadingRequest) request,
+              (io.grpc.stub.StreamObserver<sensor.SensorReading>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -391,10 +391,10 @@ public final class EnvironmentalSensorServiceGrpc {
       switch (methodId) {
         case METHODID_UPLOAD_CALIB:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.uploadCalib(
-              (io.grpc.stub.StreamObserver<sensor.Environment.CalibrationResult>) responseObserver);
+              (io.grpc.stub.StreamObserver<sensor.CalibrationResult>) responseObserver);
         case METHODID_LIVE_TUNING:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.liveTuning(
-              (io.grpc.stub.StreamObserver<sensor.Environment.SensorReading>) responseObserver);
+              (io.grpc.stub.StreamObserver<sensor.SensorReading>) responseObserver);
         default:
           throw new AssertionError();
       }

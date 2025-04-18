@@ -15,29 +15,29 @@ public final class TrafficLightServiceGrpc {
   public static final String SERVICE_NAME = "traffic.TrafficLightService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<traffic.TrafficLight.GetStatusRequest,
-      traffic.TrafficLight.TrafficLightStatus> getGetStatusMethod;
+  private static volatile io.grpc.MethodDescriptor<traffic.GetStatusRequest,
+      traffic.TrafficLightStatus> getGetStatusMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetStatus",
-      requestType = traffic.TrafficLight.GetStatusRequest.class,
-      responseType = traffic.TrafficLight.TrafficLightStatus.class,
+      requestType = traffic.GetStatusRequest.class,
+      responseType = traffic.TrafficLightStatus.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<traffic.TrafficLight.GetStatusRequest,
-      traffic.TrafficLight.TrafficLightStatus> getGetStatusMethod() {
-    io.grpc.MethodDescriptor<traffic.TrafficLight.GetStatusRequest, traffic.TrafficLight.TrafficLightStatus> getGetStatusMethod;
+  public static io.grpc.MethodDescriptor<traffic.GetStatusRequest,
+      traffic.TrafficLightStatus> getGetStatusMethod() {
+    io.grpc.MethodDescriptor<traffic.GetStatusRequest, traffic.TrafficLightStatus> getGetStatusMethod;
     if ((getGetStatusMethod = TrafficLightServiceGrpc.getGetStatusMethod) == null) {
       synchronized (TrafficLightServiceGrpc.class) {
         if ((getGetStatusMethod = TrafficLightServiceGrpc.getGetStatusMethod) == null) {
           TrafficLightServiceGrpc.getGetStatusMethod = getGetStatusMethod =
-              io.grpc.MethodDescriptor.<traffic.TrafficLight.GetStatusRequest, traffic.TrafficLight.TrafficLightStatus>newBuilder()
+              io.grpc.MethodDescriptor.<traffic.GetStatusRequest, traffic.TrafficLightStatus>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetStatus"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  traffic.TrafficLight.GetStatusRequest.getDefaultInstance()))
+                  traffic.GetStatusRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  traffic.TrafficLight.TrafficLightStatus.getDefaultInstance()))
+                  traffic.TrafficLightStatus.getDefaultInstance()))
               .setSchemaDescriptor(new TrafficLightServiceMethodDescriptorSupplier("GetStatus"))
               .build();
         }
@@ -46,29 +46,29 @@ public final class TrafficLightServiceGrpc {
     return getGetStatusMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<traffic.TrafficLight.GetStatusRequest,
-      traffic.TrafficLight.TrafficLightStatus> getWatchStatusMethod;
+  private static volatile io.grpc.MethodDescriptor<traffic.GetStatusRequest,
+      traffic.TrafficLightStatus> getWatchStatusMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "WatchStatus",
-      requestType = traffic.TrafficLight.GetStatusRequest.class,
-      responseType = traffic.TrafficLight.TrafficLightStatus.class,
+      requestType = traffic.GetStatusRequest.class,
+      responseType = traffic.TrafficLightStatus.class,
       methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-  public static io.grpc.MethodDescriptor<traffic.TrafficLight.GetStatusRequest,
-      traffic.TrafficLight.TrafficLightStatus> getWatchStatusMethod() {
-    io.grpc.MethodDescriptor<traffic.TrafficLight.GetStatusRequest, traffic.TrafficLight.TrafficLightStatus> getWatchStatusMethod;
+  public static io.grpc.MethodDescriptor<traffic.GetStatusRequest,
+      traffic.TrafficLightStatus> getWatchStatusMethod() {
+    io.grpc.MethodDescriptor<traffic.GetStatusRequest, traffic.TrafficLightStatus> getWatchStatusMethod;
     if ((getWatchStatusMethod = TrafficLightServiceGrpc.getWatchStatusMethod) == null) {
       synchronized (TrafficLightServiceGrpc.class) {
         if ((getWatchStatusMethod = TrafficLightServiceGrpc.getWatchStatusMethod) == null) {
           TrafficLightServiceGrpc.getWatchStatusMethod = getWatchStatusMethod =
-              io.grpc.MethodDescriptor.<traffic.TrafficLight.GetStatusRequest, traffic.TrafficLight.TrafficLightStatus>newBuilder()
+              io.grpc.MethodDescriptor.<traffic.GetStatusRequest, traffic.TrafficLightStatus>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "WatchStatus"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  traffic.TrafficLight.GetStatusRequest.getDefaultInstance()))
+                  traffic.GetStatusRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  traffic.TrafficLight.TrafficLightStatus.getDefaultInstance()))
+                  traffic.TrafficLightStatus.getDefaultInstance()))
               .setSchemaDescriptor(new TrafficLightServiceMethodDescriptorSupplier("WatchStatus"))
               .build();
         }
@@ -77,29 +77,29 @@ public final class TrafficLightServiceGrpc {
     return getWatchStatusMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<traffic.TrafficLight.SequenceUpdate,
-      traffic.TrafficLight.SeqUpdateSummary> getUpdateSeqMethod;
+  private static volatile io.grpc.MethodDescriptor<traffic.SequenceUpdate,
+      traffic.SeqUpdateSummary> getUpdateSeqMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "UpdateSeq",
-      requestType = traffic.TrafficLight.SequenceUpdate.class,
-      responseType = traffic.TrafficLight.SeqUpdateSummary.class,
+      requestType = traffic.SequenceUpdate.class,
+      responseType = traffic.SeqUpdateSummary.class,
       methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
-  public static io.grpc.MethodDescriptor<traffic.TrafficLight.SequenceUpdate,
-      traffic.TrafficLight.SeqUpdateSummary> getUpdateSeqMethod() {
-    io.grpc.MethodDescriptor<traffic.TrafficLight.SequenceUpdate, traffic.TrafficLight.SeqUpdateSummary> getUpdateSeqMethod;
+  public static io.grpc.MethodDescriptor<traffic.SequenceUpdate,
+      traffic.SeqUpdateSummary> getUpdateSeqMethod() {
+    io.grpc.MethodDescriptor<traffic.SequenceUpdate, traffic.SeqUpdateSummary> getUpdateSeqMethod;
     if ((getUpdateSeqMethod = TrafficLightServiceGrpc.getUpdateSeqMethod) == null) {
       synchronized (TrafficLightServiceGrpc.class) {
         if ((getUpdateSeqMethod = TrafficLightServiceGrpc.getUpdateSeqMethod) == null) {
           TrafficLightServiceGrpc.getUpdateSeqMethod = getUpdateSeqMethod =
-              io.grpc.MethodDescriptor.<traffic.TrafficLight.SequenceUpdate, traffic.TrafficLight.SeqUpdateSummary>newBuilder()
+              io.grpc.MethodDescriptor.<traffic.SequenceUpdate, traffic.SeqUpdateSummary>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "UpdateSeq"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  traffic.TrafficLight.SequenceUpdate.getDefaultInstance()))
+                  traffic.SequenceUpdate.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  traffic.TrafficLight.SeqUpdateSummary.getDefaultInstance()))
+                  traffic.SeqUpdateSummary.getDefaultInstance()))
               .setSchemaDescriptor(new TrafficLightServiceMethodDescriptorSupplier("UpdateSeq"))
               .build();
         }
@@ -108,29 +108,29 @@ public final class TrafficLightServiceGrpc {
     return getUpdateSeqMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<traffic.TrafficLight.TrafficLightCmd,
-      traffic.TrafficLight.TrafficLightStatus> getLiveControlMethod;
+  private static volatile io.grpc.MethodDescriptor<traffic.TrafficLightCmd,
+      traffic.TrafficLightStatus> getLiveControlMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "LiveControl",
-      requestType = traffic.TrafficLight.TrafficLightCmd.class,
-      responseType = traffic.TrafficLight.TrafficLightStatus.class,
+      requestType = traffic.TrafficLightCmd.class,
+      responseType = traffic.TrafficLightStatus.class,
       methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
-  public static io.grpc.MethodDescriptor<traffic.TrafficLight.TrafficLightCmd,
-      traffic.TrafficLight.TrafficLightStatus> getLiveControlMethod() {
-    io.grpc.MethodDescriptor<traffic.TrafficLight.TrafficLightCmd, traffic.TrafficLight.TrafficLightStatus> getLiveControlMethod;
+  public static io.grpc.MethodDescriptor<traffic.TrafficLightCmd,
+      traffic.TrafficLightStatus> getLiveControlMethod() {
+    io.grpc.MethodDescriptor<traffic.TrafficLightCmd, traffic.TrafficLightStatus> getLiveControlMethod;
     if ((getLiveControlMethod = TrafficLightServiceGrpc.getLiveControlMethod) == null) {
       synchronized (TrafficLightServiceGrpc.class) {
         if ((getLiveControlMethod = TrafficLightServiceGrpc.getLiveControlMethod) == null) {
           TrafficLightServiceGrpc.getLiveControlMethod = getLiveControlMethod =
-              io.grpc.MethodDescriptor.<traffic.TrafficLight.TrafficLightCmd, traffic.TrafficLight.TrafficLightStatus>newBuilder()
+              io.grpc.MethodDescriptor.<traffic.TrafficLightCmd, traffic.TrafficLightStatus>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "LiveControl"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  traffic.TrafficLight.TrafficLightCmd.getDefaultInstance()))
+                  traffic.TrafficLightCmd.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  traffic.TrafficLight.TrafficLightStatus.getDefaultInstance()))
+                  traffic.TrafficLightStatus.getDefaultInstance()))
               .setSchemaDescriptor(new TrafficLightServiceMethodDescriptorSupplier("LiveControl"))
               .build();
         }
@@ -192,8 +192,8 @@ public final class TrafficLightServiceGrpc {
      * Unary
      * </pre>
      */
-    public void getStatus(traffic.TrafficLight.GetStatusRequest request,
-        io.grpc.stub.StreamObserver<traffic.TrafficLight.TrafficLightStatus> responseObserver) {
+    public void getStatus(traffic.GetStatusRequest request,
+        io.grpc.stub.StreamObserver<traffic.TrafficLightStatus> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetStatusMethod(), responseObserver);
     }
 
@@ -202,8 +202,8 @@ public final class TrafficLightServiceGrpc {
      * Server‑stream
      * </pre>
      */
-    public void watchStatus(traffic.TrafficLight.GetStatusRequest request,
-        io.grpc.stub.StreamObserver<traffic.TrafficLight.TrafficLightStatus> responseObserver) {
+    public void watchStatus(traffic.GetStatusRequest request,
+        io.grpc.stub.StreamObserver<traffic.TrafficLightStatus> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getWatchStatusMethod(), responseObserver);
     }
 
@@ -212,8 +212,8 @@ public final class TrafficLightServiceGrpc {
      * Client‑stream
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<traffic.TrafficLight.SequenceUpdate> updateSeq(
-        io.grpc.stub.StreamObserver<traffic.TrafficLight.SeqUpdateSummary> responseObserver) {
+    public io.grpc.stub.StreamObserver<traffic.SequenceUpdate> updateSeq(
+        io.grpc.stub.StreamObserver<traffic.SeqUpdateSummary> responseObserver) {
       return io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall(getUpdateSeqMethod(), responseObserver);
     }
 
@@ -222,8 +222,8 @@ public final class TrafficLightServiceGrpc {
      * Bi‑di
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<traffic.TrafficLight.TrafficLightCmd> liveControl(
-        io.grpc.stub.StreamObserver<traffic.TrafficLight.TrafficLightStatus> responseObserver) {
+    public io.grpc.stub.StreamObserver<traffic.TrafficLightCmd> liveControl(
+        io.grpc.stub.StreamObserver<traffic.TrafficLightStatus> responseObserver) {
       return io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall(getLiveControlMethod(), responseObserver);
     }
 
@@ -233,29 +233,29 @@ public final class TrafficLightServiceGrpc {
             getGetStatusMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                traffic.TrafficLight.GetStatusRequest,
-                traffic.TrafficLight.TrafficLightStatus>(
+                traffic.GetStatusRequest,
+                traffic.TrafficLightStatus>(
                   this, METHODID_GET_STATUS)))
           .addMethod(
             getWatchStatusMethod(),
             io.grpc.stub.ServerCalls.asyncServerStreamingCall(
               new MethodHandlers<
-                traffic.TrafficLight.GetStatusRequest,
-                traffic.TrafficLight.TrafficLightStatus>(
+                traffic.GetStatusRequest,
+                traffic.TrafficLightStatus>(
                   this, METHODID_WATCH_STATUS)))
           .addMethod(
             getUpdateSeqMethod(),
             io.grpc.stub.ServerCalls.asyncClientStreamingCall(
               new MethodHandlers<
-                traffic.TrafficLight.SequenceUpdate,
-                traffic.TrafficLight.SeqUpdateSummary>(
+                traffic.SequenceUpdate,
+                traffic.SeqUpdateSummary>(
                   this, METHODID_UPDATE_SEQ)))
           .addMethod(
             getLiveControlMethod(),
             io.grpc.stub.ServerCalls.asyncBidiStreamingCall(
               new MethodHandlers<
-                traffic.TrafficLight.TrafficLightCmd,
-                traffic.TrafficLight.TrafficLightStatus>(
+                traffic.TrafficLightCmd,
+                traffic.TrafficLightStatus>(
                   this, METHODID_LIVE_CONTROL)))
           .build();
     }
@@ -280,8 +280,8 @@ public final class TrafficLightServiceGrpc {
      * Unary
      * </pre>
      */
-    public void getStatus(traffic.TrafficLight.GetStatusRequest request,
-        io.grpc.stub.StreamObserver<traffic.TrafficLight.TrafficLightStatus> responseObserver) {
+    public void getStatus(traffic.GetStatusRequest request,
+        io.grpc.stub.StreamObserver<traffic.TrafficLightStatus> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetStatusMethod(), getCallOptions()), request, responseObserver);
     }
@@ -291,8 +291,8 @@ public final class TrafficLightServiceGrpc {
      * Server‑stream
      * </pre>
      */
-    public void watchStatus(traffic.TrafficLight.GetStatusRequest request,
-        io.grpc.stub.StreamObserver<traffic.TrafficLight.TrafficLightStatus> responseObserver) {
+    public void watchStatus(traffic.GetStatusRequest request,
+        io.grpc.stub.StreamObserver<traffic.TrafficLightStatus> responseObserver) {
       io.grpc.stub.ClientCalls.asyncServerStreamingCall(
           getChannel().newCall(getWatchStatusMethod(), getCallOptions()), request, responseObserver);
     }
@@ -302,8 +302,8 @@ public final class TrafficLightServiceGrpc {
      * Client‑stream
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<traffic.TrafficLight.SequenceUpdate> updateSeq(
-        io.grpc.stub.StreamObserver<traffic.TrafficLight.SeqUpdateSummary> responseObserver) {
+    public io.grpc.stub.StreamObserver<traffic.SequenceUpdate> updateSeq(
+        io.grpc.stub.StreamObserver<traffic.SeqUpdateSummary> responseObserver) {
       return io.grpc.stub.ClientCalls.asyncClientStreamingCall(
           getChannel().newCall(getUpdateSeqMethod(), getCallOptions()), responseObserver);
     }
@@ -313,8 +313,8 @@ public final class TrafficLightServiceGrpc {
      * Bi‑di
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<traffic.TrafficLight.TrafficLightCmd> liveControl(
-        io.grpc.stub.StreamObserver<traffic.TrafficLight.TrafficLightStatus> responseObserver) {
+    public io.grpc.stub.StreamObserver<traffic.TrafficLightCmd> liveControl(
+        io.grpc.stub.StreamObserver<traffic.TrafficLightStatus> responseObserver) {
       return io.grpc.stub.ClientCalls.asyncBidiStreamingCall(
           getChannel().newCall(getLiveControlMethod(), getCallOptions()), responseObserver);
     }
@@ -339,7 +339,7 @@ public final class TrafficLightServiceGrpc {
      * Unary
      * </pre>
      */
-    public traffic.TrafficLight.TrafficLightStatus getStatus(traffic.TrafficLight.GetStatusRequest request) {
+    public traffic.TrafficLightStatus getStatus(traffic.GetStatusRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetStatusMethod(), getCallOptions(), request);
     }
@@ -349,8 +349,8 @@ public final class TrafficLightServiceGrpc {
      * Server‑stream
      * </pre>
      */
-    public java.util.Iterator<traffic.TrafficLight.TrafficLightStatus> watchStatus(
-        traffic.TrafficLight.GetStatusRequest request) {
+    public java.util.Iterator<traffic.TrafficLightStatus> watchStatus(
+        traffic.GetStatusRequest request) {
       return io.grpc.stub.ClientCalls.blockingServerStreamingCall(
           getChannel(), getWatchStatusMethod(), getCallOptions(), request);
     }
@@ -375,8 +375,8 @@ public final class TrafficLightServiceGrpc {
      * Unary
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<traffic.TrafficLight.TrafficLightStatus> getStatus(
-        traffic.TrafficLight.GetStatusRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<traffic.TrafficLightStatus> getStatus(
+        traffic.GetStatusRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetStatusMethod(), getCallOptions()), request);
     }
@@ -405,12 +405,12 @@ public final class TrafficLightServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_GET_STATUS:
-          serviceImpl.getStatus((traffic.TrafficLight.GetStatusRequest) request,
-              (io.grpc.stub.StreamObserver<traffic.TrafficLight.TrafficLightStatus>) responseObserver);
+          serviceImpl.getStatus((traffic.GetStatusRequest) request,
+              (io.grpc.stub.StreamObserver<traffic.TrafficLightStatus>) responseObserver);
           break;
         case METHODID_WATCH_STATUS:
-          serviceImpl.watchStatus((traffic.TrafficLight.GetStatusRequest) request,
-              (io.grpc.stub.StreamObserver<traffic.TrafficLight.TrafficLightStatus>) responseObserver);
+          serviceImpl.watchStatus((traffic.GetStatusRequest) request,
+              (io.grpc.stub.StreamObserver<traffic.TrafficLightStatus>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -424,10 +424,10 @@ public final class TrafficLightServiceGrpc {
       switch (methodId) {
         case METHODID_UPDATE_SEQ:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.updateSeq(
-              (io.grpc.stub.StreamObserver<traffic.TrafficLight.SeqUpdateSummary>) responseObserver);
+              (io.grpc.stub.StreamObserver<traffic.SeqUpdateSummary>) responseObserver);
         case METHODID_LIVE_CONTROL:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.liveControl(
-              (io.grpc.stub.StreamObserver<traffic.TrafficLight.TrafficLightStatus>) responseObserver);
+              (io.grpc.stub.StreamObserver<traffic.TrafficLightStatus>) responseObserver);
         default:
           throw new AssertionError();
       }

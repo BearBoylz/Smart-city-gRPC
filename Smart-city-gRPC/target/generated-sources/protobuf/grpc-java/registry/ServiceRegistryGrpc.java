@@ -15,29 +15,29 @@ public final class ServiceRegistryGrpc {
   public static final String SERVICE_NAME = "registry.ServiceRegistry";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<registry.Registry.RegisterRequest,
-      registry.Registry.RegisterResponse> getRegisterServiceMethod;
+  private static volatile io.grpc.MethodDescriptor<registry.RegisterRequest,
+      registry.RegisterResponse> getRegisterServiceMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "RegisterService",
-      requestType = registry.Registry.RegisterRequest.class,
-      responseType = registry.Registry.RegisterResponse.class,
+      requestType = registry.RegisterRequest.class,
+      responseType = registry.RegisterResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<registry.Registry.RegisterRequest,
-      registry.Registry.RegisterResponse> getRegisterServiceMethod() {
-    io.grpc.MethodDescriptor<registry.Registry.RegisterRequest, registry.Registry.RegisterResponse> getRegisterServiceMethod;
+  public static io.grpc.MethodDescriptor<registry.RegisterRequest,
+      registry.RegisterResponse> getRegisterServiceMethod() {
+    io.grpc.MethodDescriptor<registry.RegisterRequest, registry.RegisterResponse> getRegisterServiceMethod;
     if ((getRegisterServiceMethod = ServiceRegistryGrpc.getRegisterServiceMethod) == null) {
       synchronized (ServiceRegistryGrpc.class) {
         if ((getRegisterServiceMethod = ServiceRegistryGrpc.getRegisterServiceMethod) == null) {
           ServiceRegistryGrpc.getRegisterServiceMethod = getRegisterServiceMethod =
-              io.grpc.MethodDescriptor.<registry.Registry.RegisterRequest, registry.Registry.RegisterResponse>newBuilder()
+              io.grpc.MethodDescriptor.<registry.RegisterRequest, registry.RegisterResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "RegisterService"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  registry.Registry.RegisterRequest.getDefaultInstance()))
+                  registry.RegisterRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  registry.Registry.RegisterResponse.getDefaultInstance()))
+                  registry.RegisterResponse.getDefaultInstance()))
               .setSchemaDescriptor(new ServiceRegistryMethodDescriptorSupplier("RegisterService"))
               .build();
         }
@@ -46,29 +46,29 @@ public final class ServiceRegistryGrpc {
     return getRegisterServiceMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<registry.Registry.DiscoverRequest,
-      registry.Registry.ServiceInfo> getDiscoverServicesMethod;
+  private static volatile io.grpc.MethodDescriptor<registry.DiscoverRequest,
+      registry.ServiceInfo> getDiscoverServicesMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "DiscoverServices",
-      requestType = registry.Registry.DiscoverRequest.class,
-      responseType = registry.Registry.ServiceInfo.class,
+      requestType = registry.DiscoverRequest.class,
+      responseType = registry.ServiceInfo.class,
       methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-  public static io.grpc.MethodDescriptor<registry.Registry.DiscoverRequest,
-      registry.Registry.ServiceInfo> getDiscoverServicesMethod() {
-    io.grpc.MethodDescriptor<registry.Registry.DiscoverRequest, registry.Registry.ServiceInfo> getDiscoverServicesMethod;
+  public static io.grpc.MethodDescriptor<registry.DiscoverRequest,
+      registry.ServiceInfo> getDiscoverServicesMethod() {
+    io.grpc.MethodDescriptor<registry.DiscoverRequest, registry.ServiceInfo> getDiscoverServicesMethod;
     if ((getDiscoverServicesMethod = ServiceRegistryGrpc.getDiscoverServicesMethod) == null) {
       synchronized (ServiceRegistryGrpc.class) {
         if ((getDiscoverServicesMethod = ServiceRegistryGrpc.getDiscoverServicesMethod) == null) {
           ServiceRegistryGrpc.getDiscoverServicesMethod = getDiscoverServicesMethod =
-              io.grpc.MethodDescriptor.<registry.Registry.DiscoverRequest, registry.Registry.ServiceInfo>newBuilder()
+              io.grpc.MethodDescriptor.<registry.DiscoverRequest, registry.ServiceInfo>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "DiscoverServices"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  registry.Registry.DiscoverRequest.getDefaultInstance()))
+                  registry.DiscoverRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  registry.Registry.ServiceInfo.getDefaultInstance()))
+                  registry.ServiceInfo.getDefaultInstance()))
               .setSchemaDescriptor(new ServiceRegistryMethodDescriptorSupplier("DiscoverServices"))
               .build();
         }
@@ -77,29 +77,29 @@ public final class ServiceRegistryGrpc {
     return getDiscoverServicesMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<registry.Registry.HeartbeatPing,
-      registry.Registry.HeartbeatAck> getHeartbeatMethod;
+  private static volatile io.grpc.MethodDescriptor<registry.HeartbeatPing,
+      registry.HeartbeatAck> getHeartbeatMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Heartbeat",
-      requestType = registry.Registry.HeartbeatPing.class,
-      responseType = registry.Registry.HeartbeatAck.class,
+      requestType = registry.HeartbeatPing.class,
+      responseType = registry.HeartbeatAck.class,
       methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
-  public static io.grpc.MethodDescriptor<registry.Registry.HeartbeatPing,
-      registry.Registry.HeartbeatAck> getHeartbeatMethod() {
-    io.grpc.MethodDescriptor<registry.Registry.HeartbeatPing, registry.Registry.HeartbeatAck> getHeartbeatMethod;
+  public static io.grpc.MethodDescriptor<registry.HeartbeatPing,
+      registry.HeartbeatAck> getHeartbeatMethod() {
+    io.grpc.MethodDescriptor<registry.HeartbeatPing, registry.HeartbeatAck> getHeartbeatMethod;
     if ((getHeartbeatMethod = ServiceRegistryGrpc.getHeartbeatMethod) == null) {
       synchronized (ServiceRegistryGrpc.class) {
         if ((getHeartbeatMethod = ServiceRegistryGrpc.getHeartbeatMethod) == null) {
           ServiceRegistryGrpc.getHeartbeatMethod = getHeartbeatMethod =
-              io.grpc.MethodDescriptor.<registry.Registry.HeartbeatPing, registry.Registry.HeartbeatAck>newBuilder()
+              io.grpc.MethodDescriptor.<registry.HeartbeatPing, registry.HeartbeatAck>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Heartbeat"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  registry.Registry.HeartbeatPing.getDefaultInstance()))
+                  registry.HeartbeatPing.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  registry.Registry.HeartbeatAck.getDefaultInstance()))
+                  registry.HeartbeatAck.getDefaultInstance()))
               .setSchemaDescriptor(new ServiceRegistryMethodDescriptorSupplier("Heartbeat"))
               .build();
         }
@@ -108,29 +108,29 @@ public final class ServiceRegistryGrpc {
     return getHeartbeatMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<registry.Registry.ControlMsg,
-      registry.Registry.ControlAck> getControlChannelMethod;
+  private static volatile io.grpc.MethodDescriptor<registry.ControlMsg,
+      registry.ControlAck> getControlChannelMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ControlChannel",
-      requestType = registry.Registry.ControlMsg.class,
-      responseType = registry.Registry.ControlAck.class,
+      requestType = registry.ControlMsg.class,
+      responseType = registry.ControlAck.class,
       methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
-  public static io.grpc.MethodDescriptor<registry.Registry.ControlMsg,
-      registry.Registry.ControlAck> getControlChannelMethod() {
-    io.grpc.MethodDescriptor<registry.Registry.ControlMsg, registry.Registry.ControlAck> getControlChannelMethod;
+  public static io.grpc.MethodDescriptor<registry.ControlMsg,
+      registry.ControlAck> getControlChannelMethod() {
+    io.grpc.MethodDescriptor<registry.ControlMsg, registry.ControlAck> getControlChannelMethod;
     if ((getControlChannelMethod = ServiceRegistryGrpc.getControlChannelMethod) == null) {
       synchronized (ServiceRegistryGrpc.class) {
         if ((getControlChannelMethod = ServiceRegistryGrpc.getControlChannelMethod) == null) {
           ServiceRegistryGrpc.getControlChannelMethod = getControlChannelMethod =
-              io.grpc.MethodDescriptor.<registry.Registry.ControlMsg, registry.Registry.ControlAck>newBuilder()
+              io.grpc.MethodDescriptor.<registry.ControlMsg, registry.ControlAck>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ControlChannel"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  registry.Registry.ControlMsg.getDefaultInstance()))
+                  registry.ControlMsg.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  registry.Registry.ControlAck.getDefaultInstance()))
+                  registry.ControlAck.getDefaultInstance()))
               .setSchemaDescriptor(new ServiceRegistryMethodDescriptorSupplier("ControlChannel"))
               .build();
         }
@@ -192,8 +192,8 @@ public final class ServiceRegistryGrpc {
      * Unary
      * </pre>
      */
-    public void registerService(registry.Registry.RegisterRequest request,
-        io.grpc.stub.StreamObserver<registry.Registry.RegisterResponse> responseObserver) {
+    public void registerService(registry.RegisterRequest request,
+        io.grpc.stub.StreamObserver<registry.RegisterResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getRegisterServiceMethod(), responseObserver);
     }
 
@@ -202,8 +202,8 @@ public final class ServiceRegistryGrpc {
      * Server‑stream
      * </pre>
      */
-    public void discoverServices(registry.Registry.DiscoverRequest request,
-        io.grpc.stub.StreamObserver<registry.Registry.ServiceInfo> responseObserver) {
+    public void discoverServices(registry.DiscoverRequest request,
+        io.grpc.stub.StreamObserver<registry.ServiceInfo> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDiscoverServicesMethod(), responseObserver);
     }
 
@@ -212,8 +212,8 @@ public final class ServiceRegistryGrpc {
      * Client‑stream
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<registry.Registry.HeartbeatPing> heartbeat(
-        io.grpc.stub.StreamObserver<registry.Registry.HeartbeatAck> responseObserver) {
+    public io.grpc.stub.StreamObserver<registry.HeartbeatPing> heartbeat(
+        io.grpc.stub.StreamObserver<registry.HeartbeatAck> responseObserver) {
       return io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall(getHeartbeatMethod(), responseObserver);
     }
 
@@ -222,8 +222,8 @@ public final class ServiceRegistryGrpc {
      * Bi‑di
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<registry.Registry.ControlMsg> controlChannel(
-        io.grpc.stub.StreamObserver<registry.Registry.ControlAck> responseObserver) {
+    public io.grpc.stub.StreamObserver<registry.ControlMsg> controlChannel(
+        io.grpc.stub.StreamObserver<registry.ControlAck> responseObserver) {
       return io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall(getControlChannelMethod(), responseObserver);
     }
 
@@ -233,29 +233,29 @@ public final class ServiceRegistryGrpc {
             getRegisterServiceMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                registry.Registry.RegisterRequest,
-                registry.Registry.RegisterResponse>(
+                registry.RegisterRequest,
+                registry.RegisterResponse>(
                   this, METHODID_REGISTER_SERVICE)))
           .addMethod(
             getDiscoverServicesMethod(),
             io.grpc.stub.ServerCalls.asyncServerStreamingCall(
               new MethodHandlers<
-                registry.Registry.DiscoverRequest,
-                registry.Registry.ServiceInfo>(
+                registry.DiscoverRequest,
+                registry.ServiceInfo>(
                   this, METHODID_DISCOVER_SERVICES)))
           .addMethod(
             getHeartbeatMethod(),
             io.grpc.stub.ServerCalls.asyncClientStreamingCall(
               new MethodHandlers<
-                registry.Registry.HeartbeatPing,
-                registry.Registry.HeartbeatAck>(
+                registry.HeartbeatPing,
+                registry.HeartbeatAck>(
                   this, METHODID_HEARTBEAT)))
           .addMethod(
             getControlChannelMethod(),
             io.grpc.stub.ServerCalls.asyncBidiStreamingCall(
               new MethodHandlers<
-                registry.Registry.ControlMsg,
-                registry.Registry.ControlAck>(
+                registry.ControlMsg,
+                registry.ControlAck>(
                   this, METHODID_CONTROL_CHANNEL)))
           .build();
     }
@@ -280,8 +280,8 @@ public final class ServiceRegistryGrpc {
      * Unary
      * </pre>
      */
-    public void registerService(registry.Registry.RegisterRequest request,
-        io.grpc.stub.StreamObserver<registry.Registry.RegisterResponse> responseObserver) {
+    public void registerService(registry.RegisterRequest request,
+        io.grpc.stub.StreamObserver<registry.RegisterResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getRegisterServiceMethod(), getCallOptions()), request, responseObserver);
     }
@@ -291,8 +291,8 @@ public final class ServiceRegistryGrpc {
      * Server‑stream
      * </pre>
      */
-    public void discoverServices(registry.Registry.DiscoverRequest request,
-        io.grpc.stub.StreamObserver<registry.Registry.ServiceInfo> responseObserver) {
+    public void discoverServices(registry.DiscoverRequest request,
+        io.grpc.stub.StreamObserver<registry.ServiceInfo> responseObserver) {
       io.grpc.stub.ClientCalls.asyncServerStreamingCall(
           getChannel().newCall(getDiscoverServicesMethod(), getCallOptions()), request, responseObserver);
     }
@@ -302,8 +302,8 @@ public final class ServiceRegistryGrpc {
      * Client‑stream
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<registry.Registry.HeartbeatPing> heartbeat(
-        io.grpc.stub.StreamObserver<registry.Registry.HeartbeatAck> responseObserver) {
+    public io.grpc.stub.StreamObserver<registry.HeartbeatPing> heartbeat(
+        io.grpc.stub.StreamObserver<registry.HeartbeatAck> responseObserver) {
       return io.grpc.stub.ClientCalls.asyncClientStreamingCall(
           getChannel().newCall(getHeartbeatMethod(), getCallOptions()), responseObserver);
     }
@@ -313,8 +313,8 @@ public final class ServiceRegistryGrpc {
      * Bi‑di
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<registry.Registry.ControlMsg> controlChannel(
-        io.grpc.stub.StreamObserver<registry.Registry.ControlAck> responseObserver) {
+    public io.grpc.stub.StreamObserver<registry.ControlMsg> controlChannel(
+        io.grpc.stub.StreamObserver<registry.ControlAck> responseObserver) {
       return io.grpc.stub.ClientCalls.asyncBidiStreamingCall(
           getChannel().newCall(getControlChannelMethod(), getCallOptions()), responseObserver);
     }
@@ -339,7 +339,7 @@ public final class ServiceRegistryGrpc {
      * Unary
      * </pre>
      */
-    public registry.Registry.RegisterResponse registerService(registry.Registry.RegisterRequest request) {
+    public registry.RegisterResponse registerService(registry.RegisterRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getRegisterServiceMethod(), getCallOptions(), request);
     }
@@ -349,8 +349,8 @@ public final class ServiceRegistryGrpc {
      * Server‑stream
      * </pre>
      */
-    public java.util.Iterator<registry.Registry.ServiceInfo> discoverServices(
-        registry.Registry.DiscoverRequest request) {
+    public java.util.Iterator<registry.ServiceInfo> discoverServices(
+        registry.DiscoverRequest request) {
       return io.grpc.stub.ClientCalls.blockingServerStreamingCall(
           getChannel(), getDiscoverServicesMethod(), getCallOptions(), request);
     }
@@ -375,8 +375,8 @@ public final class ServiceRegistryGrpc {
      * Unary
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<registry.Registry.RegisterResponse> registerService(
-        registry.Registry.RegisterRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<registry.RegisterResponse> registerService(
+        registry.RegisterRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getRegisterServiceMethod(), getCallOptions()), request);
     }
@@ -405,12 +405,12 @@ public final class ServiceRegistryGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_REGISTER_SERVICE:
-          serviceImpl.registerService((registry.Registry.RegisterRequest) request,
-              (io.grpc.stub.StreamObserver<registry.Registry.RegisterResponse>) responseObserver);
+          serviceImpl.registerService((registry.RegisterRequest) request,
+              (io.grpc.stub.StreamObserver<registry.RegisterResponse>) responseObserver);
           break;
         case METHODID_DISCOVER_SERVICES:
-          serviceImpl.discoverServices((registry.Registry.DiscoverRequest) request,
-              (io.grpc.stub.StreamObserver<registry.Registry.ServiceInfo>) responseObserver);
+          serviceImpl.discoverServices((registry.DiscoverRequest) request,
+              (io.grpc.stub.StreamObserver<registry.ServiceInfo>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -424,10 +424,10 @@ public final class ServiceRegistryGrpc {
       switch (methodId) {
         case METHODID_HEARTBEAT:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.heartbeat(
-              (io.grpc.stub.StreamObserver<registry.Registry.HeartbeatAck>) responseObserver);
+              (io.grpc.stub.StreamObserver<registry.HeartbeatAck>) responseObserver);
         case METHODID_CONTROL_CHANNEL:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.controlChannel(
-              (io.grpc.stub.StreamObserver<registry.Registry.ControlAck>) responseObserver);
+              (io.grpc.stub.StreamObserver<registry.ControlAck>) responseObserver);
         default:
           throw new AssertionError();
       }

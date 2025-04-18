@@ -15,29 +15,29 @@ public final class PublicTransportServiceGrpc {
   public static final String SERVICE_NAME = "transport.PublicTransportService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<transport.PublicTranspot.VehicleRequest,
-      transport.PublicTranspot.VehiclePosition> getGetVehicleMethod;
+  private static volatile io.grpc.MethodDescriptor<transport.VehicleRequest,
+      transport.VehiclePosition> getGetVehicleMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetVehicle",
-      requestType = transport.PublicTranspot.VehicleRequest.class,
-      responseType = transport.PublicTranspot.VehiclePosition.class,
+      requestType = transport.VehicleRequest.class,
+      responseType = transport.VehiclePosition.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<transport.PublicTranspot.VehicleRequest,
-      transport.PublicTranspot.VehiclePosition> getGetVehicleMethod() {
-    io.grpc.MethodDescriptor<transport.PublicTranspot.VehicleRequest, transport.PublicTranspot.VehiclePosition> getGetVehicleMethod;
+  public static io.grpc.MethodDescriptor<transport.VehicleRequest,
+      transport.VehiclePosition> getGetVehicleMethod() {
+    io.grpc.MethodDescriptor<transport.VehicleRequest, transport.VehiclePosition> getGetVehicleMethod;
     if ((getGetVehicleMethod = PublicTransportServiceGrpc.getGetVehicleMethod) == null) {
       synchronized (PublicTransportServiceGrpc.class) {
         if ((getGetVehicleMethod = PublicTransportServiceGrpc.getGetVehicleMethod) == null) {
           PublicTransportServiceGrpc.getGetVehicleMethod = getGetVehicleMethod =
-              io.grpc.MethodDescriptor.<transport.PublicTranspot.VehicleRequest, transport.PublicTranspot.VehiclePosition>newBuilder()
+              io.grpc.MethodDescriptor.<transport.VehicleRequest, transport.VehiclePosition>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetVehicle"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  transport.PublicTranspot.VehicleRequest.getDefaultInstance()))
+                  transport.VehicleRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  transport.PublicTranspot.VehiclePosition.getDefaultInstance()))
+                  transport.VehiclePosition.getDefaultInstance()))
               .setSchemaDescriptor(new PublicTransportServiceMethodDescriptorSupplier("GetVehicle"))
               .build();
         }
@@ -46,29 +46,29 @@ public final class PublicTransportServiceGrpc {
     return getGetVehicleMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<transport.PublicTranspot.VehicleRequest,
-      transport.PublicTranspot.VehiclePosition> getStreamFleetMethod;
+  private static volatile io.grpc.MethodDescriptor<transport.VehicleRequest,
+      transport.VehiclePosition> getStreamFleetMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "StreamFleet",
-      requestType = transport.PublicTranspot.VehicleRequest.class,
-      responseType = transport.PublicTranspot.VehiclePosition.class,
+      requestType = transport.VehicleRequest.class,
+      responseType = transport.VehiclePosition.class,
       methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-  public static io.grpc.MethodDescriptor<transport.PublicTranspot.VehicleRequest,
-      transport.PublicTranspot.VehiclePosition> getStreamFleetMethod() {
-    io.grpc.MethodDescriptor<transport.PublicTranspot.VehicleRequest, transport.PublicTranspot.VehiclePosition> getStreamFleetMethod;
+  public static io.grpc.MethodDescriptor<transport.VehicleRequest,
+      transport.VehiclePosition> getStreamFleetMethod() {
+    io.grpc.MethodDescriptor<transport.VehicleRequest, transport.VehiclePosition> getStreamFleetMethod;
     if ((getStreamFleetMethod = PublicTransportServiceGrpc.getStreamFleetMethod) == null) {
       synchronized (PublicTransportServiceGrpc.class) {
         if ((getStreamFleetMethod = PublicTransportServiceGrpc.getStreamFleetMethod) == null) {
           PublicTransportServiceGrpc.getStreamFleetMethod = getStreamFleetMethod =
-              io.grpc.MethodDescriptor.<transport.PublicTranspot.VehicleRequest, transport.PublicTranspot.VehiclePosition>newBuilder()
+              io.grpc.MethodDescriptor.<transport.VehicleRequest, transport.VehiclePosition>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "StreamFleet"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  transport.PublicTranspot.VehicleRequest.getDefaultInstance()))
+                  transport.VehicleRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  transport.PublicTranspot.VehiclePosition.getDefaultInstance()))
+                  transport.VehiclePosition.getDefaultInstance()))
               .setSchemaDescriptor(new PublicTransportServiceMethodDescriptorSupplier("StreamFleet"))
               .build();
         }
@@ -77,29 +77,29 @@ public final class PublicTransportServiceGrpc {
     return getStreamFleetMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<transport.PublicTranspot.RouteRecord,
-      transport.PublicTranspot.FleetSummary> getUploadRouteMethod;
+  private static volatile io.grpc.MethodDescriptor<transport.RouteRecord,
+      transport.FleetSummary> getUploadRouteMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "UploadRoute",
-      requestType = transport.PublicTranspot.RouteRecord.class,
-      responseType = transport.PublicTranspot.FleetSummary.class,
+      requestType = transport.RouteRecord.class,
+      responseType = transport.FleetSummary.class,
       methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
-  public static io.grpc.MethodDescriptor<transport.PublicTranspot.RouteRecord,
-      transport.PublicTranspot.FleetSummary> getUploadRouteMethod() {
-    io.grpc.MethodDescriptor<transport.PublicTranspot.RouteRecord, transport.PublicTranspot.FleetSummary> getUploadRouteMethod;
+  public static io.grpc.MethodDescriptor<transport.RouteRecord,
+      transport.FleetSummary> getUploadRouteMethod() {
+    io.grpc.MethodDescriptor<transport.RouteRecord, transport.FleetSummary> getUploadRouteMethod;
     if ((getUploadRouteMethod = PublicTransportServiceGrpc.getUploadRouteMethod) == null) {
       synchronized (PublicTransportServiceGrpc.class) {
         if ((getUploadRouteMethod = PublicTransportServiceGrpc.getUploadRouteMethod) == null) {
           PublicTransportServiceGrpc.getUploadRouteMethod = getUploadRouteMethod =
-              io.grpc.MethodDescriptor.<transport.PublicTranspot.RouteRecord, transport.PublicTranspot.FleetSummary>newBuilder()
+              io.grpc.MethodDescriptor.<transport.RouteRecord, transport.FleetSummary>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "UploadRoute"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  transport.PublicTranspot.RouteRecord.getDefaultInstance()))
+                  transport.RouteRecord.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  transport.PublicTranspot.FleetSummary.getDefaultInstance()))
+                  transport.FleetSummary.getDefaultInstance()))
               .setSchemaDescriptor(new PublicTransportServiceMethodDescriptorSupplier("UploadRoute"))
               .build();
         }
@@ -108,29 +108,29 @@ public final class PublicTransportServiceGrpc {
     return getUploadRouteMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<transport.PublicTranspot.RouteRecord,
-      transport.PublicTranspot.VehiclePosition> getFleetControlMethod;
+  private static volatile io.grpc.MethodDescriptor<transport.RouteRecord,
+      transport.VehiclePosition> getFleetControlMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "FleetControl",
-      requestType = transport.PublicTranspot.RouteRecord.class,
-      responseType = transport.PublicTranspot.VehiclePosition.class,
+      requestType = transport.RouteRecord.class,
+      responseType = transport.VehiclePosition.class,
       methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
-  public static io.grpc.MethodDescriptor<transport.PublicTranspot.RouteRecord,
-      transport.PublicTranspot.VehiclePosition> getFleetControlMethod() {
-    io.grpc.MethodDescriptor<transport.PublicTranspot.RouteRecord, transport.PublicTranspot.VehiclePosition> getFleetControlMethod;
+  public static io.grpc.MethodDescriptor<transport.RouteRecord,
+      transport.VehiclePosition> getFleetControlMethod() {
+    io.grpc.MethodDescriptor<transport.RouteRecord, transport.VehiclePosition> getFleetControlMethod;
     if ((getFleetControlMethod = PublicTransportServiceGrpc.getFleetControlMethod) == null) {
       synchronized (PublicTransportServiceGrpc.class) {
         if ((getFleetControlMethod = PublicTransportServiceGrpc.getFleetControlMethod) == null) {
           PublicTransportServiceGrpc.getFleetControlMethod = getFleetControlMethod =
-              io.grpc.MethodDescriptor.<transport.PublicTranspot.RouteRecord, transport.PublicTranspot.VehiclePosition>newBuilder()
+              io.grpc.MethodDescriptor.<transport.RouteRecord, transport.VehiclePosition>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "FleetControl"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  transport.PublicTranspot.RouteRecord.getDefaultInstance()))
+                  transport.RouteRecord.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  transport.PublicTranspot.VehiclePosition.getDefaultInstance()))
+                  transport.VehiclePosition.getDefaultInstance()))
               .setSchemaDescriptor(new PublicTransportServiceMethodDescriptorSupplier("FleetControl"))
               .build();
         }
@@ -192,8 +192,8 @@ public final class PublicTransportServiceGrpc {
      * Unary
      * </pre>
      */
-    public void getVehicle(transport.PublicTranspot.VehicleRequest request,
-        io.grpc.stub.StreamObserver<transport.PublicTranspot.VehiclePosition> responseObserver) {
+    public void getVehicle(transport.VehicleRequest request,
+        io.grpc.stub.StreamObserver<transport.VehiclePosition> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetVehicleMethod(), responseObserver);
     }
 
@@ -202,8 +202,8 @@ public final class PublicTransportServiceGrpc {
      * Server‑stream
      * </pre>
      */
-    public void streamFleet(transport.PublicTranspot.VehicleRequest request,
-        io.grpc.stub.StreamObserver<transport.PublicTranspot.VehiclePosition> responseObserver) {
+    public void streamFleet(transport.VehicleRequest request,
+        io.grpc.stub.StreamObserver<transport.VehiclePosition> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getStreamFleetMethod(), responseObserver);
     }
 
@@ -212,8 +212,8 @@ public final class PublicTransportServiceGrpc {
      * Client‑stream
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<transport.PublicTranspot.RouteRecord> uploadRoute(
-        io.grpc.stub.StreamObserver<transport.PublicTranspot.FleetSummary> responseObserver) {
+    public io.grpc.stub.StreamObserver<transport.RouteRecord> uploadRoute(
+        io.grpc.stub.StreamObserver<transport.FleetSummary> responseObserver) {
       return io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall(getUploadRouteMethod(), responseObserver);
     }
 
@@ -222,8 +222,8 @@ public final class PublicTransportServiceGrpc {
      * Bi‑di
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<transport.PublicTranspot.RouteRecord> fleetControl(
-        io.grpc.stub.StreamObserver<transport.PublicTranspot.VehiclePosition> responseObserver) {
+    public io.grpc.stub.StreamObserver<transport.RouteRecord> fleetControl(
+        io.grpc.stub.StreamObserver<transport.VehiclePosition> responseObserver) {
       return io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall(getFleetControlMethod(), responseObserver);
     }
 
@@ -233,29 +233,29 @@ public final class PublicTransportServiceGrpc {
             getGetVehicleMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                transport.PublicTranspot.VehicleRequest,
-                transport.PublicTranspot.VehiclePosition>(
+                transport.VehicleRequest,
+                transport.VehiclePosition>(
                   this, METHODID_GET_VEHICLE)))
           .addMethod(
             getStreamFleetMethod(),
             io.grpc.stub.ServerCalls.asyncServerStreamingCall(
               new MethodHandlers<
-                transport.PublicTranspot.VehicleRequest,
-                transport.PublicTranspot.VehiclePosition>(
+                transport.VehicleRequest,
+                transport.VehiclePosition>(
                   this, METHODID_STREAM_FLEET)))
           .addMethod(
             getUploadRouteMethod(),
             io.grpc.stub.ServerCalls.asyncClientStreamingCall(
               new MethodHandlers<
-                transport.PublicTranspot.RouteRecord,
-                transport.PublicTranspot.FleetSummary>(
+                transport.RouteRecord,
+                transport.FleetSummary>(
                   this, METHODID_UPLOAD_ROUTE)))
           .addMethod(
             getFleetControlMethod(),
             io.grpc.stub.ServerCalls.asyncBidiStreamingCall(
               new MethodHandlers<
-                transport.PublicTranspot.RouteRecord,
-                transport.PublicTranspot.VehiclePosition>(
+                transport.RouteRecord,
+                transport.VehiclePosition>(
                   this, METHODID_FLEET_CONTROL)))
           .build();
     }
@@ -280,8 +280,8 @@ public final class PublicTransportServiceGrpc {
      * Unary
      * </pre>
      */
-    public void getVehicle(transport.PublicTranspot.VehicleRequest request,
-        io.grpc.stub.StreamObserver<transport.PublicTranspot.VehiclePosition> responseObserver) {
+    public void getVehicle(transport.VehicleRequest request,
+        io.grpc.stub.StreamObserver<transport.VehiclePosition> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetVehicleMethod(), getCallOptions()), request, responseObserver);
     }
@@ -291,8 +291,8 @@ public final class PublicTransportServiceGrpc {
      * Server‑stream
      * </pre>
      */
-    public void streamFleet(transport.PublicTranspot.VehicleRequest request,
-        io.grpc.stub.StreamObserver<transport.PublicTranspot.VehiclePosition> responseObserver) {
+    public void streamFleet(transport.VehicleRequest request,
+        io.grpc.stub.StreamObserver<transport.VehiclePosition> responseObserver) {
       io.grpc.stub.ClientCalls.asyncServerStreamingCall(
           getChannel().newCall(getStreamFleetMethod(), getCallOptions()), request, responseObserver);
     }
@@ -302,8 +302,8 @@ public final class PublicTransportServiceGrpc {
      * Client‑stream
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<transport.PublicTranspot.RouteRecord> uploadRoute(
-        io.grpc.stub.StreamObserver<transport.PublicTranspot.FleetSummary> responseObserver) {
+    public io.grpc.stub.StreamObserver<transport.RouteRecord> uploadRoute(
+        io.grpc.stub.StreamObserver<transport.FleetSummary> responseObserver) {
       return io.grpc.stub.ClientCalls.asyncClientStreamingCall(
           getChannel().newCall(getUploadRouteMethod(), getCallOptions()), responseObserver);
     }
@@ -313,8 +313,8 @@ public final class PublicTransportServiceGrpc {
      * Bi‑di
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<transport.PublicTranspot.RouteRecord> fleetControl(
-        io.grpc.stub.StreamObserver<transport.PublicTranspot.VehiclePosition> responseObserver) {
+    public io.grpc.stub.StreamObserver<transport.RouteRecord> fleetControl(
+        io.grpc.stub.StreamObserver<transport.VehiclePosition> responseObserver) {
       return io.grpc.stub.ClientCalls.asyncBidiStreamingCall(
           getChannel().newCall(getFleetControlMethod(), getCallOptions()), responseObserver);
     }
@@ -339,7 +339,7 @@ public final class PublicTransportServiceGrpc {
      * Unary
      * </pre>
      */
-    public transport.PublicTranspot.VehiclePosition getVehicle(transport.PublicTranspot.VehicleRequest request) {
+    public transport.VehiclePosition getVehicle(transport.VehicleRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetVehicleMethod(), getCallOptions(), request);
     }
@@ -349,8 +349,8 @@ public final class PublicTransportServiceGrpc {
      * Server‑stream
      * </pre>
      */
-    public java.util.Iterator<transport.PublicTranspot.VehiclePosition> streamFleet(
-        transport.PublicTranspot.VehicleRequest request) {
+    public java.util.Iterator<transport.VehiclePosition> streamFleet(
+        transport.VehicleRequest request) {
       return io.grpc.stub.ClientCalls.blockingServerStreamingCall(
           getChannel(), getStreamFleetMethod(), getCallOptions(), request);
     }
@@ -375,8 +375,8 @@ public final class PublicTransportServiceGrpc {
      * Unary
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<transport.PublicTranspot.VehiclePosition> getVehicle(
-        transport.PublicTranspot.VehicleRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<transport.VehiclePosition> getVehicle(
+        transport.VehicleRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetVehicleMethod(), getCallOptions()), request);
     }
@@ -405,12 +405,12 @@ public final class PublicTransportServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_GET_VEHICLE:
-          serviceImpl.getVehicle((transport.PublicTranspot.VehicleRequest) request,
-              (io.grpc.stub.StreamObserver<transport.PublicTranspot.VehiclePosition>) responseObserver);
+          serviceImpl.getVehicle((transport.VehicleRequest) request,
+              (io.grpc.stub.StreamObserver<transport.VehiclePosition>) responseObserver);
           break;
         case METHODID_STREAM_FLEET:
-          serviceImpl.streamFleet((transport.PublicTranspot.VehicleRequest) request,
-              (io.grpc.stub.StreamObserver<transport.PublicTranspot.VehiclePosition>) responseObserver);
+          serviceImpl.streamFleet((transport.VehicleRequest) request,
+              (io.grpc.stub.StreamObserver<transport.VehiclePosition>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -424,10 +424,10 @@ public final class PublicTransportServiceGrpc {
       switch (methodId) {
         case METHODID_UPLOAD_ROUTE:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.uploadRoute(
-              (io.grpc.stub.StreamObserver<transport.PublicTranspot.FleetSummary>) responseObserver);
+              (io.grpc.stub.StreamObserver<transport.FleetSummary>) responseObserver);
         case METHODID_FLEET_CONTROL:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.fleetControl(
-              (io.grpc.stub.StreamObserver<transport.PublicTranspot.VehiclePosition>) responseObserver);
+              (io.grpc.stub.StreamObserver<transport.VehiclePosition>) responseObserver);
         default:
           throw new AssertionError();
       }
