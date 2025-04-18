@@ -1,0 +1,11 @@
+syntax = "proto3";
+package sensor;
+
+message GetReadingRequest { string sensor_id = 1; }
+message SensorReading {
+  string sensor_id = 1;
+  double temperature = 2;
+  double humidity = 3;
+  double pm25 = 4;
+  int64 timestamp = 5;
+}

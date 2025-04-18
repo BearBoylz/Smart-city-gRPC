@@ -1,0 +1,6 @@
+syntax = "proto3";
+package transport;
+
+message VehicleRequest { string vehicle_id = 1; }
+
+service PublicTransportService {}

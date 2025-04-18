@@ -1,0 +1,12 @@
+syntax = "proto3";
+package registry;
+
+message ServiceInfo {
+  string name = 1;
+  string address = 2; // host:port
+  repeated string tags = 3;
+}
+
+service ServiceRegistry {
+
+}
