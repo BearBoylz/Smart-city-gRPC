@@ -1,0 +1,22 @@
+syntax = "proto3";
+package registry;
+
+message ServiceInfo {
+  string name = 1;
+  string address = 2;
+  repeated string tags = 3;
+}
+message RegisterRequest { ServiceInfo info = 1; }
+message RegisterResponse { bool success = 1; string message = 2; }
+message DiscoverRequest { string tag = 1; }
+message HeartbeatPing { string name = 1; int64 ts = 2; }
+message HeartbeatAck  { uint32 received = 1; }
+message ControlMsg    { string name = 1; string cmd = 2; }
+message ControlAck    { string name = 1; bool ack = 2; }
+
+service ServiceRegistry {
+  rpc RegisterService (RegisterRequest) returns (RegisterResponse);                 // Unary
+  rpc DiscoverServices(DiscoverRequest) returns (stream ServiceInfo);              // Server‑stream
+  rpc Heartbeat       (stream HeartbeatPing) returns (HeartbeatAck);               // Client‑stream
+  rpc ControlChannel  (stream ControlMsg) returns (stream ControlAck);             // Bi‑di
+}
